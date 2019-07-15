@@ -2,7 +2,7 @@ package com.pvt.carlib;
 
 public class PassengerCar extends Vehicle {
 
-    public PassengerCar(int wheelCount, int axisCount, int seatCount, int weight, Engine engine) throws Exception {
+    public PassengerCar(int wheelCount, int axisCount, int seatCount, int weight, Engine engine, Transmission transmission) throws Exception {
         super(wheelCount, axisCount, seatCount, weight, engine);
     }
 

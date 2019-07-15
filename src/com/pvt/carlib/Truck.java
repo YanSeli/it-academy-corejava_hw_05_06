@@ -1,7 +1,7 @@
 package com.pvt.carlib;
 
 public class Truck extends Vehicle {
-    public Truck(int wheelCount, int axisCount, int seatCount, int weight, Engine engine) throws Exception {
+    public Truck(int wheelCount, int axisCount, int seatCount, int weight, Engine engine, Transmission transmission) throws Exception {
         super(wheelCount, axisCount, seatCount, weight, engine);
     }
 

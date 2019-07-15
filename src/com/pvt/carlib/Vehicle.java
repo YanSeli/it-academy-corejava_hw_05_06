@@ -12,8 +12,9 @@ public abstract class Vehicle {
     private String fuelType;
 
     private final Engine engine;
+    private final Transmission transmission;
 
-    public Vehicle(int wheelCount, int axisCount, int seatCount, int weight, Engine engine) throws Exception {
+    public Vehicle(int wheelCount, int axisCount, int seatCount, int weight, Engine engine, Transmission transmission) throws Exception {
         this.wheelCount = wheelCount;
         this.axisCount = axisCount;
         this.seatCount = seatCount;
@@ -21,6 +22,11 @@ public abstract class Vehicle {
 
         if(engine != null) {
             this.engine = engine;
+        }else {
+            throw new Exception();
+        }
+        if(transmission != null) {
+            this.transmission = transmission;
         }else {
             throw new Exception();
         }
